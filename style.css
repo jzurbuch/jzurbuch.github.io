@@ -1,0 +1,266 @@
+html, body {
+    height: 100%;
+    background-color: grey;
+  }
+
+#root{
+    height: 100%;
+    margin-top: 0;
+}
+
+.title{
+    color: black;
+    font-family: impact, fantasy;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 2rem;
+    margin-top: -6.1rem;
+}
+
+.menu {
+    background-color: lightslategrey;
+    overflow: hidden;
+    padding: 7px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+.menu a{
+    float: right;
+    color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-decoration: none;
+    font-size: 17px;
+}
+.menu p{
+    float: left;
+    color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    margin-left: 50px;
+    
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.startdiv{
+    text-align: center;
+    height: 60px;
+
+}
+.start{
+    margin: auto;
+    background-color: lightslategray; 
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    
+    
+}
+
+.board{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    
+
+}
+
+ .score{
+    color: black;
+    font-family: impact, fantasy;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: -10px;
+   
+    
+} 
+
+.tbody{
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-top-color: green;
+}
+
+.cell{
+    background-color: lightslategray;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+
+}
+
+.player{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+
+}
+
+.badcell{
+    background-color: rgb(185, 5, 5);
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+
+}
+
+.lmessage{
+    color: black;
+    font-family: impact, fantasy;
+    text-align: center;
+}
+
+.fscore{
+    color: black;
+    font-family: impact, fantasy;
+    text-align: center;
+}
+
+
+.inst h2{
+    color: black;
+    font-family: impact, fantasy;
+    text-align: center;
+    font-size: 28px;
+    
+}
+.inst p{
+    color: black;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin-left: 50px;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.lose button{
+    background-color: lightslategray; 
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    color: black;
+    padding: 10px 15px;
+    margin: 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.lose p{
+    color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    
+}
+
+.dogpic {
+    width: 300px; 
+    height: 300px;
+    height: auto;  
+    text-align: center;  
+    padding: 7px;  
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: lightslategray;
+    margin: auto;
+   
+}
+
+.catpic {
+    width: 300px; 
+    height: 300px;
+    height: auto;  
+    text-align: center;  
+    padding: 7px;  
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: lightslategray;
+    margin: auto;
+   
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.minfo h2{
+    color: black;
+    font-family: impact, fantasy;
+    text-align: center;
+    font-size: 28px;
+    
+}
+.minfo p{
+    color: black;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin-left: 50px;
+    padding-top: 10px;
+    margin-right: 50px;
+    font-size: 15px;
+}
+
+.money h3{
+    color: black;
+    font-family: impact, fantasy;
+    text-align: left;
+    font-size: 24px;
+    padding-left: 50px;
+}
+
+.prices{
+    color: black;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin-left: 75px;
+    
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.desc{
+    color: black;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin-left: 75px;
+    padding-top: 10px;
+    font-size: 8px;
+}
