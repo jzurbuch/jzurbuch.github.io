@@ -20,7 +20,6 @@ export default class Game {
     }
     newBoard(){
         let aboard = []
-        //changed from 225
         for(let i = 0; i < 150; i++){
            aboard.push(0);
         }
@@ -58,8 +57,7 @@ export default class Game {
         }
     }
     
-    //On moves prolly gonna have to do error chrecking rather
-    //than just returning the gameState.board
+    
      tryMoveRight(){
         let b = [...this.gameState.board];
         let pos = (b.findIndex(x => x ===2))
@@ -104,18 +102,9 @@ export default class Game {
         
     }
     
-    //function that calls itself every couple seconds
-    //this shit does not work 
-    // startFall(){
-    //    // this.updateBlocks()
-    //    console.log('test');
-
-    //    await setTimeout(this.startFall(), 5000);
-    // }
-
-    //Returns an new line with 1s for bad blocks
+    
     badBlockArr(){
-        console.log("in bad block arr");
+        
         let arr = [];
         for(let i = 0; i < 15; i++){
             arr.push(0);
@@ -138,12 +127,11 @@ export default class Game {
     
     
     updateBlocks(){
-        //might have to json this 
+        
         let line = this.badBlockArr();
         let pos = (this.gameState.board.findIndex(x => x ===2))
         this.gameState.board[pos - 15] = this.gameState.board[pos] + this.gameState.board[pos - 15]
-        this.gameState.board[pos] = 0
-        //this needs cut back 
+        this.gameState.board[pos] = 0 
         let s = this.gameState.board.splice(135,149);
         if(s.includes(1)){
             this.gameState.score += 1;

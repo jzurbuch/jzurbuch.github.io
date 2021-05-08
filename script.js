@@ -8,7 +8,6 @@ const loadPage = function(){
 
     //listeners for movement 
     $(document).on("keydown", (event) => handleKeyPress(event));
-   // $(document).on("keydown", (event) => spaceBar(event));
     $root.on("click", ".reset", (event) => handelResetButton(event));
     $root.on("click", ".joke", (event) => handleJokeButton(event));
     $root.on("click", ".dogbutton", (event) => handleDogButton(event));
@@ -18,7 +17,6 @@ const loadPage = function(){
 }
 
 const renderHead = function(){
-    //need to spruce up title 
     let header = document.createElement('div');
     header.className = 'header';
    
@@ -98,7 +96,7 @@ const startButton = function(){
 const startFall = function() {
     timer = setInterval(function() { 
         agame.updateBlocks();
-        console.log('is falling');
+    
         $('.start').empty()
         if(agame.getGameState().over === true){
             loser();
@@ -114,7 +112,6 @@ const startFall = function() {
 //Lose function 
 const loser = async function(){
     clearInterval(timer);
-    //Maybe button to share score? 
     let lose = document.createElement('div');
     lose.className = 'lose';
     lose.style.textAlign = 'center';
@@ -197,15 +194,6 @@ const handleKeyPress = function(e){
         }
     }
 
-// const spaceBar = function(e){
-//     e.preventDefault()
-    
-//         if (e.key === ' ' || e.key === 'Spacebar') {
-//           console.log('Space pressed')
-//           startFall();
-//         }
-//     $(".g").replaceWith(renderBoard(agame)) 
-// }
 
 const handleStartButton = function(e){
     e.preventDefault();
@@ -227,7 +215,7 @@ async function getDogPic(){
         method: 'get',
         url: 'https://dog.ceo/api/breeds/image/random',
       });
-    console.log(dog)
+    
     return dog.data.message
 }
 
@@ -236,7 +224,7 @@ async function getCatPic(){
         method: 'get',
         url: 'https://thatcopy.pw/catapi/rest/',
       });
-    console.log(cat)
+
     return cat.data.webpurl
 }
 
